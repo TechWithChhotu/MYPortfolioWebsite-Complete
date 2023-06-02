@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Free Web tutorials, I`m chhotu it`s my personal Portfolio website and i am web developer to make and handle complex and reponsive website,Free Portfolio website "
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript ,Portfolio website, Responsite website,Bootstrap"
+    />
+    <meta name="author" content="Chhotu Kumar, C Kumar, techwithchhotu" />
+
+    <title>Chhotu`s Portfolio</title>
+
+    <!-- ==============Favicon============= -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- =================Link CSS file=============== -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- =================font awsome cdn================= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ===================aos css cdn=================== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--=============Google font - poppines cdn============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Kanit&family=Nunito&family=Poppins:wght@400;600;700&family=Tangerine:wght@700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================swiper library css cdn================-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--=================This is Main Header=============-->
+    <header class="Main-Header" id="Heading">
+      <nav>
+        <input type="checkbox" id="CheckBox" />
+        <label for="CheckBox" id="Bar" onclick="ChangeIcon()">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="logo" data-aos="fade-left">
+          <a href="index.html">Chhotu`s Portfolio</a>
+        </div>
+        <div class="Navigation" data-aos="fade-right">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Project</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==========================Main Section======================== -->
+    <main>
+      <!--=================Home Section Design=====================-->
+      <section class="HeroSection" id="Home">
+        <div class="LeftHeroSection" data-aos="fade-right">
+          <p>Hii</p>
+          <h3>I am <span>Chhotu</span></h3>
+          <p>
+            I am very Passionate for <br />
+            <span>Web Development</span> as <br />
+            well as
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='["Des. App. Dev.", "Programming", "Web Designing","SEO" ]'
+            >
+              <span class="wrap">Programming</span>
+            </a>
+          </p>
+        </div>
+        <div class="RightHeroSection" data-aos="fade-left">
+          <figure><img src="./favicon.png" alt="BAS" /></figure>
+        </div>
+      </section>
+
+      <!--===================About Section Design===================-->
+      <section class="About" id="About">
+        <h2 data-aos="fade-down" class="SectionHeading">About Us</h2>
+        <div class="Container">
+          <div class="LeftAboutSection" data-aos="fade-left">
+            <img src="./Assets/Developer.png" alt="" />
+            <a
+              href="https://drive.google.com/file/d/1nksoxLoN615AzGPAG0c6pjYPQVQjbWKT/view?usp=sharing"
+              class="btn"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="RightAboutSection" data-aos="fade-right">
+            <article>
+              I am a passionate web development with a strong command of
+              programming languages, data structures, and algorithms. I am
+              currently pursuing a Bachelor of Computer Applications and have
+              experience working on a variety of web development projects. I am
+              also proficient in desktop application development using Java,
+              AWT, and Spring. I am a team player and have a strong work ethic.
+              I am always looking for new challenges and opportunities to learn
+              and grow. I am confident that I would be a valuable asset to your
+              team.
+            </article>
+
+            <div class="Skills Grid-Container">
+              <div class="Skill">
+                <p id="Number">99%</p>
+                <h2 id="SkillName">HTML</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#f60188" />
+                      <stop offset="100%" stop-color="#a107ed" />
+
+                      <linearGradient id="GradientColor">
+                        <stop offset="20%" stop-color="#008000" />
+                        <stop offset="100%" stop-color="#a107ed" />
+                      </linearGradient>
+                    </linearGradient>
+                  </defs>
+                  <circle class="Circle1" cx="50" cy="50" r="40" />
+                </svg>
+              </div>
+              <!-- Second Skill -->
+              <div class="Skill">
+                <p id="Number">98%</p>
+                <h2 id="SkillName">CSS</h2>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <circle class="Circle2" cx="50" cy="50" r="40" />
+                </svg>
+              </div>
+
+              <div class="Skill">
+                <p id="Number">85%</p>
+                <h2 id="SkillName">JS</h2>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <circle class="Circle3" cx="50" cy="50" r="40" />
+                </svg>
+              </div>
+
+              <div class="Skill">
+                <p id="Number">95%</p>
+                <h2 id="SkillName">C/C++</h2>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <circle class="Circle4" cx="50" cy="50" r="40" />
+                </svg>
+              </div>
+
+              <div class="Skill">
+                <p id="Number">80%</p>
+                <h2 id="SkillName">Java</h2>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <circle class="Circle5" cx="50" cy="50" r="40" />
+                </svg>
+              </div>
+
+              <div class="Skill">
+                <p id="Number">75%</p>
+                <h2 id="SkillName">DSA</h2>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="100px"
+                  height="100px"
+                >
+                  <circle class="Circle6" cx="50" cy="50" r="40" />
+                  <!-- stroke-linecap="round" -->
+                </svg>
+              </div>
+            </div>
+            <!--  -->
+            <div class="Education">
+              <h2>Education</h2>
+
+              <ul class="NameOfCourses">
+                <li>
+                  Bachelor of Computer Applications (BCA) [Munger University/RD
+                  College]
+                </li>
+                <li>Full Stack Web Development [PwSkills]</li>
+                <li>A Job Ready Bootcamp using C++,DSA & IOT [inouron]</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================Project Section Structure====================-->
+      <section class="Projects" id="Projects">
+        <h2 data-aos="fade-down" class="SectionHeading">Projects</h2>
+        <div class="Grid-Container">
+          <!-- First Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project1.jpeg" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/Portpolio-Multipledesigne/0-PortFolio/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Second Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project2.jpeg" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/10-LearningWebsite/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Third Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project3.png" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/9-Calculator/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Fourth Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project4.jpeg" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/5-DeveloperLandingPage/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Fifth Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project5.jpeg" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/6-Restaurant/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Sixth Project -->
+          <div class="Project">
+            <img src="./ProjectImage/Project6.jpeg" alt="" />
+            <a
+              id="Arrow-Right"
+              title="Click and view "
+              target="_blank"
+              href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/7-MusicWebsite/"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="SeeMoreProjects">
+          <a href="https://zty.pe/" id="SeeMoreProjects">See More Projects</a>
+        </div>
+      </section>
+
+      <!-- ===================Projects Counter Section======================-->
+      <!-- data-aos="zoom-in" -->
+      <section class="Counter">
+        <div>
+          <span class="CounterNumber">0+</span>
+          <h3>Projects Complated</h3>
+        </div>
+        <div>
+          <span class="CounterNumber">0+</span>
+          <h3>Happy Clients</h3>
+        </div>
+        <div>
+          <span class="CounterNumber">0+</span>
+          <h3>Cups of Coffee</h3>
+        </div>
+      </section>
+
+      <!-- ===================Services Section=============== -->
+      <section class="Services" id="Services">
+        <h2 data-aos="fade-down" class="SectionHeading">Services</h2>
+        <div class="Grid-Container" data-aos="zoom-in">
+          <!-- First Service-->
+          <div class="Service">
+            <img src="./Assets/Web-Dev.png" alt="" />
+            <h3>Web Development</h3>
+            <p class="Content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              quae maiores illum dolorum aliquid
+              <a
+                id="Arrow-Right"
+                title="Click and view "
+                target="_blank"
+                href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/7-MusicWebsite/"
+                >....Read More
+              </a>
+            </p>
+          </div>
+
+          <!-- Second Service-->
+          <div class="Service">
+            <img src="./Assets/Desktop-Development.jpg" alt="" />
+            <h3>desktop Develop.</h3>
+            <p class="Content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              quae maiores illum dolorum aliquid
+              <a
+                id="Arrow-Right"
+                title="Click and view "
+                target="_blank"
+                href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/7-MusicWebsite/"
+                >....Read More
+              </a>
+            </p>
+          </div>
+
+          <!-- Third Service-->
+          <div class="Service">
+            <img src="./Assets/Mobile-App.png" alt="" />
+            <h3>Android Develop.</h3>
+            <p class="Content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              quae maiores illum dolorum aliquid
+              <a
+                id="Arrow-Right"
+                title="Click and view "
+                target="_blank"
+                href="https://chhotukumarportfolio23.on.drv.tw/Fullportfolio.com/Projects/7-MusicWebsite/"
+                >....Read More
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===============Freelancting Section=============-->
+      <section class="Freelancing">
+        <h2 data-aos="fade-down" class="SectionHeading">Freelancing</h2>
+
+        <div class="Grid-Container">
+          <div class="Left-Section">
+            <img src="./Assets/Programmer.png" alt="" />
+          </div>
+          <div class="FreeLanc-Right">
+            <h3 id="FreelacingOK">Avilable for Freelancing and Intership</h3>
+            <div class="btn freelanc-btn">Hire Me</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Contact" id="Contact">
+        <h2 data-aos="fade-down" class="SectionHeading">Contact</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34363.955908225435!2d85.9029256242651!3d25.13346474206015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f23f3a18845207%3A0xfe8d2516db666509!2z4KSc4KSv4KSu4KSC4KSX4KSy4KS-!5e0!3m2!1shi!2sin!4v1685667701168!5m2!1shi!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form data-aos="fade-out" method="POST" class="form" autocomplete="off">
+          <div class="Name">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="FirstName"
+              required
+            />
+
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="LastName"
+              required
+            />
+          </div>
+          <input type="email" placeholder="Email" name="email" required />
+          <br />
+          <textarea
+            placeholder="Your Message"
+            name="Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <section class="Aluminai">
+        <h2 data-aos="fade-down" class="SectionHeading">Our Aluminai</h2>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/Amazon.jpg" alt="" />
+                <p>Amazon</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/LinkedIn.jpg" alt="" />
+                <p>Linkedin</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/facebook.jpg" alt="" />
+                <p>Facebook</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/infosys.jpg" alt="" />
+                <p>Infosys</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/wipro.jpg" alt="" />
+                <p>Wipro</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/TCS.jpg" alt="" />
+                <p>TCS</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/HCL.jpg" alt="" />
+                <p>HCL</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/Infotech.png" alt="" />
+                <p>Infotech</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <article>
+                <i class="fa-solid fa-quote-left" style="color: #7095d7"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit commodi sint, laborum voluptate quod officiis?
+                <i class="fa-solid fa-quote-right" style="color: #7095d7"></i>
+              </article>
+              <div class="imgname">
+                <img src="./Aluminai/Mahindra.jpg" alt="" />
+                <p>Mahindra</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <!--================This is footer section=====================-->
+    <footer class="Footer">
+      <h3>Chhotu`s Portfolio</h3>
+
+      <p>Copyright © 2022 LOGO. All rights reserved.</p>
+
+      <ul class="SocialIcon">
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/techwithchhotu/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div id="GotoTop" title="Go TO Top">
+        <a href="#Heading"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+  </body>
+  <!-- ===============Link script file============== -->
+  <script src="./script.js"></script>
+
+  <!--===================aos js cdn================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: "ease-in-sine",
+    });
+  </script>
+  <!-- ================swiper library css cdn================-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 1000,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>

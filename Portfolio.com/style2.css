@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --MainBgc: rgb(0, 0, 33);
+  --Header: rgb(11, 1, 74);
+  --HeroSectionFontSize: 25px;
+  --Freelancer: linear-gradient(red, black);
+  /* --slidupbgc: rgb(216, 38, 109); */
+  --slidupbgc: rgb(11, 1, 74);
+  --btncolor: rgb(242, 235, 235);
+  --btngrandient: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+}
+
+body {
+  background-color: var(--MainBgc);
+  /* font-family: "DynaPuff", cursive; */
+  /* font-family: "Kanit", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Tangerine", cursive; */
+  /* font-family: "Varela Round", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+/* =============
+Comman Designe
+================ */
+#Horizontal {
+  height: 0;
+  width: 100%;
+  box-shadow: -5px 1px 10px yellow;
+}
+
+/* =============
+Seperate Designe
+================ */
+.MainHeader {
+  width: 100%;
+  height: 50px;
+  background-color: var(--Header);
+}
+.MainHeader nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Navigation {
+  display: flex;
+  z-index: 50;
+}
+.Navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 450px;
+  font-family: "Nunito", sans-serif;
+}
+.Navigation ul li a {
+  color: white;
+  transition: 0.5s;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+}
+.Navigation ul li a:hover {
+  color: rgb(98, 0, 255);
+  border: 1px solid white;
+}
+.logo a {
+  font-size: 25px;
+  color: white;
+}
+
+#CheckBox {
+  display: none;
+}
+
+#Bar {
+  display: none;
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  color: white;
+}
+/* ===================
+Hero Section Design
+=================== */
+.HeroSection {
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.LeftHeroSection {
+  color: white;
+  font-size: var(--HeroSectionFontSize);
+  z-index: 1;
+}
+.LeftHeroSection span {
+  color: blueviolet;
+}
+.RightHeroSection img {
+  height: 300px;
+  border-radius: 10px;
+}
+/* ===================
+About Section Design
+=================== */
+.About {
+  height: fit-content;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.About .Container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.LeftAboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.LeftAboutSection img {
+  height: 300px;
+}
+.LeftAboutSection .btn {
+  margin-bottom: 1rem;
+}
+.RightAboutSection {
+  color: white;
+  width: 45%;
+}
+.RightAboutSection article {
+  text-align: justify;
+}
+.RightAboutSection .Skills {
+  margin: 20px 0;
+}
+
+.RightAboutSection .Skills h2,
+.RightAboutSection .Education h2 {
+  font-weight: 400;
+}
+
+.SkillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 1rem;
+  position: relative;
+  left: 15px;
+}
+
+.Persentage {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.Persentage .SkillName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background: var(--MainBgc);
+  border-radius: 50%;
+  font-weight: 300;
+  color: var(--btncolor);
+  /* Reset after */
+  margin: 0 15px;
+}
+
+.per-75 {
+  background-image: conic-gradient(#99ff00 75%, gray 0);
+}
+.per-99 {
+  background-image: conic-gradient(#ea0890 99%, gray 0);
+}
+.per-95 {
+  background-image: conic-gradient(#ea0850 95%, gray 0);
+}
+.per-85 {
+  background-image: conic-gradient(#40ea08 85%, gray 0);
+}
+.per-80 {
+  background-image: conic-gradient(#4c08ea 80%, gray 0);
+}
+
+.RightAboutSection .Education .EducationInfo .NameOfCourses {
+  width: 100%;
+  position: relative;
+  left: 30px;
+}
+.RightAboutSection .Education .EducationInfo .NameOfCourses li {
+  list-style: circle;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+/* =====================
+Project Section
+===================== */
+.Projects {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.ProjectCard {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ProjectCard:hover .ProjectName {
+  opacity: 1;
+  bottom: 30px;
+  background-color: #3dea08;
+}
+
+.ProjectCard:hover .Effect {
+  background: var(--grandient);
+  opacity: 0.4;
+}
+.Effect {
+  transition: 0.5s;
+  height: 250px;
+  width: 200px;
+  opacity: 0;
+  background: var(--grandient);
+
+  position: relative;
+  bottom: 290px;
+  z-index: 1;
+}
+.ProjectName,
+.ServicesName {
+  transition: 0.5s;
+  z-index: 2;
+
+  text-align: center;
+  color: white;
+
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 2px 0;
+  font-weight: 300;
+  background-color: #ea0890;
+}
+.ProjectImg img,
+.ServicesImg img {
+  height: 250px;
+  width: 200px;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.ProjectCard:hover .ProjectImg img {
+  opacity: 1;
+}
+
+.SeeMoreProjects {
+  max-width: 750px;
+  margin: auto auto;
+  text-align: end;
+}
+/* Project Counter Section */
+.Counter {
+  margin-top: -2.5rem;
+  margin-bottom: 2.5rem;
+  height: 7rem;
+  width: 100%;
+  background: var(--btngrandient);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  color: var(--btncolor);
+}
+
+.Counter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Counter div h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+
+/* =============
+Services
+============= */
+.Services {
+  margin: 20px 0;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.ServicesCard {
+  /* background-color: rgb(80, 98, 114); */
+  background-color: rgb(58, 75, 79);
+
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+
+  overflow: hidden;
+  text-align: center;
+  /* filter: blur(1px); */
+}
+
+.SlidUp {
+  width: 100%;
+  height: 100%;
+  background-color: var(--slidupbgc);
+  position: relative;
+  top: 90px;
+  transition: 0.8s;
+  z-index: 1;
+}
+.ServicesCard:hover .SlidUp {
+  top: -103px;
+  z-index: 1;
+}
+.ServicesCard:hover .Contant {
+  color: white;
+}
+.ServicesImg img {
+  opacity: 1;
+  height: 70px;
+  width: 70px;
+  margin: 15px;
+  z-index: 2;
+  position: relative;
+  top: 0;
+}
+.ServicesCard .Contant {
+  color: black;
+  position: relative;
+  top: -13.5rem;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.8s;
+}
+
+.ServicesCard .Contant p {
+  text-align: justify;
+  padding: 0 8px;
+}
+.ServicesCard .Contant h3 {
+  font-weight: 500;
+}
+/* Freelancer Section */
+
+.freelancer {
+  margin: 4rem 0 0;
+  background: url("./Assets/Freelaner4.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 2;
+  height: 10rem;
+  width: 100%;
+}
+
+.freelancer div {
+  background: var(--Freelancer);
+  opacity: 0.5;
+  color: white;
+  width: 100%;
+  height: 100%;
+
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+  display: grid;
+  /* gap: 0.5rem; */
+  place-items: center;
+  font-family: "Varela Round", sans-serif;
+}
+
+.freelancer div .btn {
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 4px;
+  border: 1px solid transparent;
+  background-color: rgb(249, 0, 0);
+  cursor: pointer;
+}
+
+.freelancer div .btn:hover {
+  border: 1px solid yellow;
+}
+
+/* Contact Section */
+
+.Contact {
+  margin: 4rem 0 2rem 0;
+}
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form input,
+.form textarea,
+.form button {
+  padding: 0.4rem;
+  margin: 1rem 0;
+
+  outline: none;
+  border: 1px solid var(--btnshadow);
+  border: 1px solid rgba(253, 82, 247, 0.502);
+
+  border-radius: 10px;
+}
+.form .Name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form button {
+  position: relative;
+  left: 42%;
+  font-size: 17px;
+  padding: 0.3rem 1rem;
+  transition: 0.5s;
+}
+.form button:hover {
+  color: white;
+  background-color: green;
+  z-index: 10;
+}
+
+.form .Name input {
+  width: 45%;
+}
+
+.form input[type="email"],
+.form textarea {
+  min-width: 97%;
+}
+
+/* Terlsdkfjaoisjadlk */
+.Aluminai .SectionHeading {
+  margin-bottom: 1rem;
+}
+.Aluminai .swiper {
+  width: 100%;
+  height: 160px;
+}
+
+.Aluminai .swiper-slide {
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.Aluminai .swiper-slide article {
+  background: #fff;
+  padding: 1rem 0.5rem 2.5rem;
+}
+.Aluminai .swiper-slide article i {
+  position: relative;
+  top: -3px;
+}
+.Aluminai .swiper-slide .imgname {
+  width: 140px;
+  height: 70px;
+  /* object-fit: cover; */
+  /* border-radius: 50%; */
+
+  position: relative;
+  top: -2.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Aluminai .swiper-slide .imgname img {
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* border-bottom: 4px solid white; */
+}
+
+.Aluminai .swiper-slide .imgname p {
+  font-size: 15px;
+  font-weight: 700;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* footer section Designe */
+.Footer {
+  padding: 0.5rem 2rem;
+  height: fit-content;
+  background-color: var(--Header);
+  color: white;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer h3 {
+  font-weight: 400;
+}
+.Footer .SocialIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  /* padding: 5px; */
+}
+.Footer .SocialIcon li a,
+#GotoTop a {
+  color: white;
+}
+.Footer .SocialIcon li,
+#GotoTop a {
+  /* padding: 5px; */
+  border: 1px solid transparent;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.Footer .SocialIcon li:hover,
+#GotoTop a:hover {
+  border: 1px solid white;
+  background-color: gray;
+  border-radius: 40%;
+  opacity: 0.5;
+}
+/* =============
+Responsivness
+================ */
+
+@media (max-width: 768px) {
+  #Bar {
+    display: block;
+  }
+  .Navigation {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    animation: Transition 0.5s linear;
+  }
+  @keyframes Transition {
+    0% {
+      right: -100px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  .Navigation ul li {
+    padding: 2px 0;
+    margin: 5px 0;
+  }
+  .Navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    background-color: var(--Header);
+    border-radius: 0 0 0 10px;
+  }
+
+  #CheckBox:checked ~ .Navigation {
+    display: block;
+  }
+
+  .RightAboutSection {
+    width: 85%;
+  }
+  .About .Container {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo a {
+    font-size: 20px;
+  }
+  .HeroSection {
+    flex-direction: column;
+    height: 90vh;
+    /* height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */
+  }
+
+  .RightHeroSection img {
+    height: 250px;
+    border-radius: 10px;
+  }
+}
